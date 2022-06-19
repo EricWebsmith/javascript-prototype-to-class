@@ -1,5 +1,5 @@
 import * as vscode from 'vscode';
-import {toClass} from './model';
+import { Classifier } from './prototype_to_class';
 
 function replaceCode() {
 	let editor = vscode.window.activeTextEditor;
@@ -9,7 +9,8 @@ function replaceCode() {
 
 	for (const selection of editor.selections) {
 		const selectionText = editor.document.getText(selection);
-		const classCode = toClass(selectionText);
+		const classifier_ = new Classifier();
+		const classCode = classifier_.toClass(selectionText);
 		editor.edit(builder => {
 			builder.delete(selection);
 			builder.insert(selection.anchor, classCode);
@@ -22,5 +23,4 @@ export function activate(context: vscode.ExtensionContext) {
 	context.subscriptions.push(disposable);
 }
 
-// this method is called when your extension is deactivated
-export function deactivate() {}
+export function deactivate() { }

@@ -1,9 +1,10 @@
 # Change Log
 
-All notable changes to the "javascript-prototype-to-class" extension will be documented in this file.
+## [0.0.2]
+- Support converting a complete leetcode prototype function to class.
+- The main function is mentained in https://github.com/EricWebsmith/prototype_to_class
 
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## [0.0.1]
+- Initial release 
+- Support converting an empty leetcode prototype function to class.
+- Support jsdoc
