@@ -4,10 +4,6 @@ export class Classifier {
     oldCtor: string = '';
     oldMethods: string[] = [];
 
-    constructor() {
-        this.className = '';
-    }
-
     parseClassName() {
         const match1 = this.oldCode.match(/(var|let|const)\s*([a-zA-Z0-9]*)\s*=\s*function/);
         if (match1 !== null) {
@@ -103,7 +99,7 @@ export class Classifier {
     }
 
     toClass(oldCode: string): string {
-        if (oldCode === '' || oldCode == null) {
+        if (oldCode === '' || oldCode === null || oldCode === undefined) {
             return oldCode;
         }
         this.oldCode = oldCode;
@@ -117,7 +113,7 @@ class ${this.className} {
 
         for (const oldMethod of this.oldMethods) {
             const newMethod = this.getNewMethod(oldMethod);
-            if (newMethod == null) {
+            if (newMethod === null) {
                 continue;
             }
 
