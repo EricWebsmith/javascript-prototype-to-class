@@ -2,6 +2,7 @@
 
 ## [0.0.3]
 - Bug Fixing
+- Add icon
 
 ## [0.0.2]
 - Support converting a complete leetcode prototype function to class.
