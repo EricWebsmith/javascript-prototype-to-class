@@ -1,5 +1,8 @@
 # Change Log
 
+## [0.0.3]
+- Bug Fixing
+
 ## [0.0.2]
 - Support converting a complete leetcode prototype function to class.
 - The main function is mentained in https://github.com/EricWebsmith/prototype_to_class

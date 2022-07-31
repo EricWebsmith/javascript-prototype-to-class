@@ -11,11 +11,13 @@ export class Classifier {
             return;
         }
 
-        const match2 = this.oldCode.match(/function\s*([a-zA-Z0-9]+)\s\(/);
+        const match2 = this.oldCode.match(/function\s*([a-zA-Z0-9]+)\s*\(/);
         if (match2 !== null) {
             this.className = match2[1];
             return;
         }
+
+        throw new Error('Failed to determine class name.');
     }
 
     format(s: string) {

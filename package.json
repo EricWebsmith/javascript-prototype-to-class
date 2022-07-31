@@ -2,7 +2,8 @@
   "name": "javascript-prototype-to-class",
   "displayName": "javascript prototype to class",
   "description": "",
-  "version": "0.0.2",
+  "icon": "logo.png",
+  "version": "0.0.3",
   "publisher": "EricZhou",
   "repository": "https://github.com/EricWebsmith/javascript-prototype-to-class",
   "engines": {

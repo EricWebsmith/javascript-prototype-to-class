@@ -6,6 +6,10 @@ Select the funtions and prototype methods, nothing more.
 Press [Ctrl + Shift + P], Type `javascript prototype to class`
 Then the code is converted to modern class.
 
+## The main logic is maintained in 
+
+[https://github.com/EricWebsmith/prototype_to_class](https://github.com/EricWebsmith/prototype_to_class)
+
 ## Issues
 - I tested it only by some code in leetcode. I will add more test cases in the future.
 - comments outside functions are ignored.
